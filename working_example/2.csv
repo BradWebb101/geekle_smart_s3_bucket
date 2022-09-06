@@ -1,7 +1,10 @@
-Username; Identifier;First name;Last name
-booker12;9012;Rachel;Booker
-grey07;2070;Laura;Grey
-johnson81;4081;Craig;Johnson
-jenkins46;9346;Mary;Jenkins
-smith79;5079;Jamie;Smith
-
+id,asins,brand,categories,colors,count,dateAdded,dateUpdated
+AVpfHrJ6ilAPnD_xVXOI,,Josmo,"Clothing,Shoes,Men's Shoes,All Men's Shoes",,,2016-11-07T00:45:12Z,2016-11-07T00:45:12Z
+AVpfHrJ6ilAPnD_xVXOI,,Josmo,"Clothing,Shoes,Men's Shoes,All Men's Shoes",,,2016-11-07T00:45:12Z,2016-11-07T00:45:12Z
+AVpfHsWP1cnluZ0-eVZ7,,SERVUS BY HONEYWELL,"All Men's Shoes,Shoes,Men's Shoes,Clothing",,,2016-06-14T04:29:57Z,2016-07-09T20:26:48Z
+AVpfHsWP1cnluZ0-eVZ7,,SERVUS BY HONEYWELL,"All Men's Shoes,Shoes,Men's Shoes,Clothing",,,2016-06-14T04:29:57Z,2016-07-09T20:26:48Z
+AVpfHsWP1cnluZ0-eVZ7,,SERVUS BY HONEYWELL,"All Men's Shoes,Shoes,Men's Shoes,Clothing",,,2016-06-14T04:29:57Z,2016-07-09T20:26:48Z
+AVpfHsWP1cnluZ0-eVZ7,,SERVUS BY HONEYWELL,"All Men's Shoes,Shoes,Men's Shoes,Clothing",,,2016-06-14T04:29:57Z,2016-07-09T20:26:48Z
+AVpfHsWP1cnluZ0-eVZ7,,SERVUS BY HONEYWELL,"All Men's Shoes,Shoes,Men's Shoes,Clothing",,,2016-06-14T04:29:57Z,2016-07-09T20:26:48Z
+AVpfHsWP1cnluZ0-eVZ7,,SERVUS BY HONEYWELL,"All Men's Shoes,Shoes,Men's Shoes,Clothing",,,2016-06-14T04:29:57Z,2016-07-09T20:26:48Z
+AVpfHsWP1cnluZ0-eVZ7,,SERVUS BY HONEYWELL,"All Men's Shoes,Shoes,Men's Shoes,Clothing",,,2016-06-14T04:29:57Z,2016-07-09T20:26:48Z
