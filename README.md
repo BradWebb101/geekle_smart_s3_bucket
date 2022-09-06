@@ -1,7 +1,31 @@
+# PyGeekle'22 Python Summit
 
-# Welcome to your CDK Python project!
+This project was for a presentation at the conference around the use of s3 buckets with Analytics and Data Science. CPandas doesnt have the best connection methods to s3, so i walk through a simple importer and exporter code block for Pandas and s3 as well as spoke of the idea of a 'Smart s3 bucket' where common data tasks can be automated if you have any manual intensive or high frequency processes, using Pandas and Boto3.
 
-This is a blank project for Python development with CDK.
+## Screenshot
+
+![alt text](./readme_images/pygeekle_screenshot.png "Title")
+
+## AWS s3 get csv code
+    ```python 
+    response = s3.get_object(Bucket=input_bucket, Key=file_key)
+    new_file = pd.read_csv(response['Body'])
+    ```
+
+## AWS s3 put csv code
+
+    ```python
+    with StringIO() as csv_buffer:
+        output_df.to_csv(csv_buffer, index=False)
+        response = s3.put_object(
+            Bucket=output_bucket, Key=output_key, Body=csv_buffer.getvalue()
+        )
+    ```
+## Smart s3 Bucket
+
+    I covered off the idea of a 'Smart s3 bucket' with Pandas, where you can upload files to and have lambda functions trggered to 'Process' data files for you. Also can reduce manual work and tediuos tasks, that are all too common in Analytics and Data Science.
+
+## AWS instructions
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -55,4 +79,10 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Enjoy!
+
+
+
+  
+
+
+

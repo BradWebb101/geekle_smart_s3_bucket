@@ -32,7 +32,7 @@ class Smarts3BucketStack(Stack):
         # add notificaiton for OBJECT_CREATED_PUT
         input_bucket.add_event_notification(_s3.EventType.OBJECT_CREATED_PUT, notification)
 
-        # granting permissions for the lambda functino son the s3 buckets. 
+        # granting permissions for the lambda function son the s3 buckets. 
         input_bucket.grant_read(function)
         output_bucket.grant_read_write(function)
 
