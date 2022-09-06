@@ -41,5 +41,3 @@ def main(event, context):
             Bucket=output_bucket, Key=output_key, Body=csv_buffer.getvalue()
         )
 
-    # deleting original file 
-    s3.delete_object(input_bucket, file_key)
