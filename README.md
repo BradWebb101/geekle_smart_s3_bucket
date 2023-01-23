@@ -10,20 +10,17 @@ This project was for a presentation at the conference around the use of s3 bucke
 [Presentation](https://www.canva.com/design/DAFLayUgobs/view)
 
 ## AWS s3 get csv code
-    ```
+
     response = s3.get_object(Bucket=input_bucket, Key=file_key)
     new_file = pd.read_csv(response['Body'])
-    ```
 
 ## AWS s3 put csv code
-
-    ```
     with StringIO() as csv_buffer:
         output_df.to_csv(csv_buffer, index=False)
         response = s3.put_object(
             Bucket=output_bucket, Key=output_key, Body=csv_buffer.getvalue()
         )
-    ```
+        
 ## Smart s3 Bucket
 
 I covered off the idea of a 'Smart s3 bucket' with Pandas, where you can upload files to and have lambda functions trggered to 'Process' data files for you. Also can reduce manual work and tediuos tasks, that are all too common in Analytics and Data Science.
